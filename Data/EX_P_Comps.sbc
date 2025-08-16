@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Components>
+    
+    <Component>
+      <Id>
+        <TypeId>Component</TypeId>
+        <SubtypeId>AryxLynxon_FusionComponent</SubtypeId>
+      </Id>
+      <DisplayName>Fusion Coil</DisplayName>
+      <Icon>Textures\GUI\Icons\ARYLYN_FUSION_COMPONENT.dds</Icon>
+      <Size>
+        <X>0.35</X>
+        <Y>0.85</Y>
+        <Z>0.35</Z>
+      </Size>
+      <Mass>35</Mass>
+      <Volume>25</Volume>
+      <Model>Models\EpsteinDrive\AryxFusionComponent.mwm</Model>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <MaxIntegrity>50</MaxIntegrity>
+      <DropProbability>0.45</DropProbability>
+      <Health>40</Health>
+      <MinimalPricePerUnit>10</MinimalPricePerUnit>
+      <MinimumOfferAmount>10</MinimumOfferAmount>
+      <MaximumOfferAmount>500</MaximumOfferAmount>
+      <MinimumOrderAmount>10</MinimumOrderAmount>
+      <MaximumOrderAmount>100</MaximumOrderAmount>
+      <CanPlayerOrder>true</CanPlayerOrder>
+      <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
+      <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
+    </Component>
+
+    <!--Component>
+			<Id>
+				<TypeId>Component</TypeId>
+				<SubtypeId>UNNComponent</SubtypeId>
+			</Id>
+			<DisplayName>UNN Components</DisplayName>
+			<Icon>Textures\GUI\Icons\Component\UNN-Component.png</Icon>
+			<Size>
+				<X>0.2</X>
+				<Y>0.2</Y>
+				<Z>0.1</Z>
+			</Size>
+			<Mass>50</Mass>
+			<Volume>5</Volume>
+			<Model>Models\Component\UNN_Tech_Comp.mwm</Model>
+			<PhysicalMaterial>Metal</PhysicalMaterial>
+			<MaxIntegrity>500</MaxIntegrity>
+			<DropProbability>1</DropProbability>
+			<Health>50</Health>
+			<MinimalPricePerUnit>1</MinimalPricePerUnit>
+			<MinimumOfferAmount>0</MinimumOfferAmount>
+			<MaximumOfferAmount>0</MaximumOfferAmount>
+			<MinimumOrderAmount>0</MinimumOrderAmount>
+			<MaximumOrderAmount>0</MaximumOrderAmount>
+			<CanPlayerOrder>true</CanPlayerOrder>
+			<MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
+			<MaximumAcquisitionAmount>1000</MaximumAcquisitionAmount>
+		</Component-->
+    
+  </Components>
+</Definitions>

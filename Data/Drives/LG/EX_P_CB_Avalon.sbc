@@ -1,0 +1,99 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CubeBlocks>
+  
+  <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>ARYLNX_QUADRA_Epstein_Drive</SubtypeId>
+      </Id>
+      <DisplayName>E-405 "Avalon" Light Epstein Drive</DisplayName>
+      <Description>A smaller, compact epstein drive when compared to its counterparts. Designed to be used in quad-clusters aboard raiding craft like the Granicus, Marco's pursuit ship, or the Dewalt. [BELTER]</Description>
+      <Icon>Textures\GUI\Icons\ARYLYN_QUADRA_EPSTEIN_DRIVE.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="2" y="2" z="4"/>
+      <ModelOffset x="0" y="0" z="0"/>
+      <Model>Models\EpsteinDrive\ARYX_QUADRA_EPSTEIN_DRIVE.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="40" />
+        <Component Subtype="Construction" Count="20" />
+        <Component Subtype="AryxLynxon_FusionComponent" Count="16" />
+        <Component Subtype="LargeTube" Count="48" />
+        <Component Subtype="Construction" Count="60" />
+        <Component Subtype="SteelPlate" Count="200" />
+      </Components>
+      <CriticalComponent Subtype="AryxLynxon_FusionComponent" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="2.00"/>
+        <MountPoint Side="Left" StartX="3.00" StartY="0.00" EndX="4.00" EndY="2.00"/>
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="2.00" EndY="1.00"/>
+        <MountPoint Side="Bottom" StartX="0.00" StartY="3.00" EndX="2.00" EndY="4.00"/>
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\EpsteinDrive\ARYX_QUADRA_EPSTEIN_DRIVE_BS1.mwm"/>
+        <Model BuildPercentUpperBound="0.67" File="Models\EpsteinDrive\ARYX_QUADRA_EPSTEIN_DRIVE_BS2.mwm"/>
+        <Model BuildPercentUpperBound="1.00" File="Models\EpsteinDrive\ARYX_QUADRA_EPSTEIN_DRIVE_BS3.mwm"/>
+      </BuildProgressModels>
+      <BlockPairName>LG_ARYLYN_QUADRA_Epstein_Drive</BlockPairName>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>0.3</EffectivenessAtMaxInfluence>
+      <NeedsAtmosphereForInfluence>true</NeedsAtmosphereForInfluence>
+
+		  <BuildTimeSeconds>240</BuildTimeSeconds>
+      <MaxPowerConsumption>1.5</MaxPowerConsumption>
+      <MinPowerConsumption>0.00000001</MinPowerConsumption>
+      <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <ForceMagnitude>12500000</ForceMagnitude>
+      <FuelConverter>
+        <FuelId>
+          <TypeId>GasProperties</TypeId>
+          <SubtypeId>Hydrogen</SubtypeId>
+        </FuelId>
+        <Efficiency>2.700</Efficiency>
+      </FuelConverter>
+
+      <SlowdownFactor>1</SlowdownFactor>
+      <FlameDamageLengthScale>1.25</FlameDamageLengthScale>
+      <FlameLengthScale>1.00</FlameLengthScale>
+      <FlameDamage>1.0</FlameDamage>
+      <FlameIdleColor>
+        <X>1.50</X>
+        <Y>0.75</Y>
+        <Z>0.00</Z>
+        <W>0.00</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>1</X>
+        <Y>2</Y>
+        <Z>3</Z>
+        <W>0.60</W>
+      </FlameFullColor>
+
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameFlare>LargeGridSmallThruster</FlameFlare>
+      <FlameVisibilityDistance>25000</FlameVisibilityDistance>
+      <FlameGlareQuerySize>5</FlameGlareQuerySize>
+      <PrimarySound>ArcARYLYN_edrive_standard_burn</PrimarySound>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <Public>true</Public>
+      <GeneralDamageMultiplier>0.25</GeneralDamageMultiplier>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>100</PCU>
+      <TieredUpdateTimes>
+        <unsignedInt>100</unsignedInt>
+        <unsignedInt>3600</unsignedInt>
+        <unsignedInt>0</unsignedInt>
+      </TieredUpdateTimes>
+    </Definition>
+</CubeBlocks>
+</Definitions>

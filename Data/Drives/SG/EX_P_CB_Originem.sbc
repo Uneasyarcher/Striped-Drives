@@ -1,0 +1,103 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CubeBlocks>
+	
+
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+		<Id>
+			<TypeId>Thrust</TypeId>
+			<SubtypeId>ARYXLNX_YACHT_EPSTEIN_DRIVE</SubtypeId>
+		</Id>
+		<DisplayName>M55-G "Originem" Epstein Drive</DisplayName>
+		<Description>The drive that started it all; a modified magnetic coil fusion drive designed by Solomon Epstein himself. Warranty void if used on yachts with no off button. [CIVILIAN] </Description>
+		<Icon>Textures\GUI\Icons\ARYX_YACHT_EPSTEIN_DRIVE.dds</Icon>
+		<CubeSize>Small</CubeSize>
+		<BlockTopology>TriangleMesh</BlockTopology>
+		<Size x="5" y="5" z="4"/>
+		<ModelOffset x="0" y="0" z="0"/>
+		<Model>Models\EpsteinDrive\ARYX_YACHT_EPSTEIN_DRIVE.mwm</Model>
+		<Components>
+		<Component Subtype="SteelPlate" Count="50" />
+		<Component Subtype="Construction" Count="4" />
+		<Component Subtype="MetalGrid" Count="25" />
+		<Component Subtype="LargeTube" Count="10" />
+		<Component Subtype="AryxLynxon_FusionComponent" Count="4" />		
+		<Component Subtype="Thrust" Count="30" />		
+		<Component Subtype="Construction" Count="8" />
+		<Component Subtype="SteelPlate" Count="25" />
+		</Components>
+		<CriticalComponent Subtype="PowerCell" Index="0" />
+		<MountPoints>
+			<MountPoint Side="Back" StartX="1.00" StartY="4.00" EndX="4.00" EndY="5.00"/>
+			<MountPoint Side="Back" StartX="1.00" StartY="0.00" EndX="4.00" EndY="1.00"/>
+			<MountPoint Side="Back" StartX="0.00" StartY="1.00" EndX="1.00" EndY="4.00"/>
+			<MountPoint Side="Back" StartX="1.00" StartY="1.00" EndX="4.00" EndY="4.00"/>
+			<MountPoint Side="Back" StartX="4.00" StartY="1.00" EndX="5.00" EndY="4.00"/>
+		</MountPoints>
+		<BuildProgressModels>
+			<Model BuildPercentUpperBound="0.33" File="Models\EpsteinDrive\ARYX_YACHT_EPSTEIN_DRIVE_BS1.mwm"/>
+			<Model BuildPercentUpperBound="0.67" File="Models\EpsteinDrive\ARYX_YACHT_EPSTEIN_DRIVE_BS2.mwm"/>
+			<Model BuildPercentUpperBound="1.00" File="Models\EpsteinDrive\ARYX_YACHT_EPSTEIN_DRIVE_BS3.mwm"/>
+		</BuildProgressModels>
+		<BlockPairName>LG_ARYX_YACHT_Epstein_DRIVE</BlockPairName>
+		<MirroringY>Z</MirroringY>
+		<MirroringZ>Y</MirroringZ>
+		
+	  <EdgeType>Light</EdgeType>
+
+		<MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+		<MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+		<EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+		<EffectivenessAtMaxInfluence>0.4</EffectivenessAtMaxInfluence>
+		<NeedsAtmosphereForInfluence>true</NeedsAtmosphereForInfluence>
+
+		<BuildTimeSeconds>90</BuildTimeSeconds>	  
+	  <MaxPowerConsumption>1</MaxPowerConsumption>
+	  <MinPowerConsumption>0.0001</MinPowerConsumption>
+	  <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+	  <ForceMagnitude>3000000</ForceMagnitude>
+	  <FuelConverter>
+		<FuelId>
+		  <TypeId>GasProperties</TypeId>
+		  <SubtypeId>Hydrogen</SubtypeId>
+		</FuelId>
+		<Efficiency>10.711</Efficiency>
+	  </FuelConverter>	  
+	  
+	  <SlowdownFactor>1.25</SlowdownFactor>
+	  <FlameDamageLengthScale>1.0</FlameDamageLengthScale>
+	  <FlameLengthScale>1.00</FlameLengthScale>
+	  <FlameIdleColor>
+		<X>0</X>
+		<Y>0</Y>
+		<Z>0</Z>
+		<W>0</W>
+	  </FlameIdleColor>
+	  <FlameFullColor>
+		<X>2</X>
+		<Y>4</Y>
+		<Z>8</Z>
+		<W>0.78</W>
+	  </FlameFullColor>
+	  
+	  <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+	  <FlameLengthMaterial>AryxEpsteinDriveThrustMiddle</FlameLengthMaterial>
+	  <FlameFlare>LargeGridSmallThruster</FlameFlare>
+	  <FlameVisibilityDistance>25000</FlameVisibilityDistance>
+	  <FlameGlareQuerySize>2.5</FlameGlareQuerySize>
+	  <PrimarySound>ArcARYLYN_edrive_standard_burn</PrimarySound>
+	  <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+	  <DamagedSound>ParticleWeapExpl</DamagedSound>
+	  <Public>true</Public>
+	  <GeneralDamageMultiplier>0.25</GeneralDamageMultiplier>
+	  <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+	  <DestroySound>WepSmallWarheadExpl</DestroySound>
+	  <PCU>75</PCU>
+		<TieredUpdateTimes>
+			<unsignedInt>100</unsignedInt>
+			<unsignedInt>3600</unsignedInt>
+			<unsignedInt>0</unsignedInt>
+		</TieredUpdateTimes>		
+	</Definition>
+   </CubeBlocks>
+</Definitions>
